@@ -1,4 +1,5 @@
-一、probe
+一、probe install
+
 wget https://raw.githubusercontent.com/luptnn/lrcs/refs/heads/main/pb.sh \
 chmod +x pb.sh \
 ./pb.sh
