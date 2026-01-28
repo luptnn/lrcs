@@ -16,6 +16,7 @@ chmod +x install-fail2ban.sh \
 ./install-fail2ban.sh
 
 三、microsocks socks5
+
 wget https://raw.githubusercontent.com/luptnn/lrcs/refs/heads/main/socks5.sh \
 chmod +x socks5.sh \
 ./socks5.sh
