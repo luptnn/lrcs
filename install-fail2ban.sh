@@ -17,9 +17,9 @@ fi
 
 # --- 函数：安装与修复 ---
 install_f2b() {
-    echo "--- 配置封禁参数 (直接回车使用 24h, 60m, 3) ---"
-    read -p "请输入封禁时长 BANTIME [默认 24h]: " USER_BANTIME
-    BANTIME=${USER_BANTIME:-"24h"}
+    echo "--- 配置封禁参数 (直接回车使用 1y, 60m, 3) ---"
+    read -p "请输入封禁时长 BANTIME [默认 8760h]: " USER_BANTIME
+    BANTIME=${USER_BANTIME:-"8760h"}
     read -p "请输入检测时长 FINDTIME [默认 60m]: " USER_FINDTIME
     FINDTIME=${USER_FINDTIME:-"60m"}
     read -p "请输入最大尝试次数 MAXRETRY [默认 3]: " USER_MAXRETRY
@@ -101,7 +101,7 @@ clear
 echo "=========================================="
 echo "    Fail2Ban 管理工具 (Debian/Alpine)"
 echo "=========================================="
-echo " 1. 安装 / 修改参数并重启 (默认 24h/60m/3)"
+echo " 1. 安装 / 修改参数并重启 (默认 1y/60m/3)"
 echo " 2. 查看封禁列表 & 状态"
 echo " 3. 查看实时日志 (Ctrl+C 退出)"
 echo " 4. 彻底删除 (卸载) Fail2Ban"
@@ -118,3 +118,4 @@ case $choice in
     5) exit 0 ;;
     *) echo "无效选择";;
 esac
+
